@@ -134,7 +134,9 @@ docker push <dockerhub-username>/fat2-image:latest
 ```bash
 git add .
 git commit -m "Dockerfile with basic Linux commands"
-git push
+git remote add origin "Git URl"
+git branch -M main
+git push -u origin main
 ```
 
 ---
