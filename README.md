@@ -1,10 +1,6 @@
 # **DevOps FAT2 – Docker + Linux + Git Project**
-
-This project demonstrates how to use a Dockerfile to run basic Linux commands, build an image, push it to DockerHub, and manage everything using Git and GitHub.
-
 ---
-
-## **1. DevOps Concepts (Detailed but clean)**
+## **1. DevOps Concepts**
 
 ### **1. Version Control (Git)**
 
@@ -70,11 +66,13 @@ This mirrors real DevOps pipelines where build artifacts go to registries.
 
 ## **2. Steps I Followed**
 
-### **Step - 1 Created the Project Folder**
+### **Step - 1. Created the Project Folder**
 
 Created a folder locally to store the Dockerfile.
 
-### **Step - 2 Wrote the Dockerfile**
+---
+
+### **Step - 2. Wrote the Dockerfile**
 
 Added Linux commands:
 
@@ -88,7 +86,7 @@ Added Linux commands:
 
 ---
 
-### **Step - 3 Built the Docker Image**
+### **Step - 3. Built the Docker Image**
 
 ```bash
 docker build -t fat2-image .
@@ -98,7 +96,7 @@ During build, Docker executed all the RUN commands and showed their output.
 
 ---
 
-### **Step - 4 Ran the Container**
+### **Step - 4. Ran the Container**
 
 ```bash
 docker run fat2-image
@@ -114,20 +112,24 @@ Everything else already happened during the build stage.
 
 ---
 
-### **Step - 5 Logged in to DockerHub**
+### **Step - 5. Logged in to DockerHub**
 
 ```bash
 docker login
 ```
 
-### **Step - 6 Tagged and Pushed the Image**
+---
+
+### **Step - 6. Tagged and Pushed the Image**
 
 ```bash
 docker tag fat2-image <dockerhub-username>/fat2-image:latest
 docker push <dockerhub-username>/fat2-image:latest
 ```
 
-### **Step - 7 Pushed Project to GitHub**
+---
+
+### **Step - 7. Pushed Project to GitHub**
 
 ```bash
 git add .
@@ -137,7 +139,7 @@ git push
 
 ---
 
-## **3. What I Learned (More detailed and explained)**
+## **3. What I Learned**
 
 ### **Linux**
 
